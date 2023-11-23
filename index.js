@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use('*', (req, res) => {
     logger.info('这是一条信息级别的日志');
     logger.error('这是一条错误级别的日志');
-    res.send('Hello World');
+    res.send('Hello World 123');
 })
 
 app.listen(3000)
